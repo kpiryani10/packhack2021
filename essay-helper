@@ -100,7 +100,7 @@ def essay_helper():
             webbrowser.open_new_tab("https://www.youtube.com/watch?v=SC4xMk98Pdc")
 
     while problem != range(1, 7):
-        print("Sorry that isn't an option, please refer to the chart above and enter the corresponding number.")
+        print("Sorry that isn't an option, please refer to the chart below and enter the corresponding number.")
         essay_helper()
 
 test = print(essay_helper())
