@@ -1,93 +1,106 @@
 import webbrowser
 
-print("""
---------PHASES---------
-1. Finding idea 
-2. Outline 
-3. Research 
-4. Rough Draft 
-5. Editing 
-6. Final Draft
------------------------ """)
-problem = int(input("What phase are you currently on?(please type a number) "))
+
+def essay_helper():
+    print("""
+  --------PHASES---------
+  1. Finding idea 
+  2. Outline 
+  3. Research 
+  4. Rough Draft 
+  5. Editing 
+  6. Final Draft
+  ----------------------- """)
+    problem = int(input("What phase are you currently on?(please type a number) "))
 
 
-if problem == 1:
-  print("""What are you having trouble with? 
-  1. General Brainstorming Tips
-  2. Brainstorming Strategies
-  """)
-  part1 = int(input("type the letter of your issue: "))
-  if part1 == 1:
-    webbrowser.open_new_tab("https://www.easybib.com/guides/writing-guides/tips/how-to-brainstorm-for-essay/")
-  elif part1 == 2:
-    webbrowser.open_new_tab("https://www.princetoncollegeconsulting.net/blog/6-creative-ways-to-brainstorm-an-essay")
+    if problem == 1:
+        print(""" 
+      1. General Brainstorming Tips
+      2. Brainstorming Strategies
+      """)
+        part1 = int(input("What part are you having trouble with? "))
+        if part1 == 1:
+            webbrowser.open_new_tab("https://www.easybib.com/guides/writing-guides/tips/how-to-brainstorm-for-essay/")
+        elif part1 == 2:
+            webbrowser.open_new_tab(
+                "https://www.princetoncollegeconsulting.net/blog/6-creative-ways-to-brainstorm-an-essay")
 
-if problem == 2:
-    print(""""
-    1. Not sure what to do?
-    2. Having trouble with organization?
-    """)  
-    part2 = int(input("What part are you having trouble with? "))
-    if part2 == 1:
-      webbrowser.open_new_tab("https://www.easybib.com/guides/writing-guides/tips/how-to-brainstorm-for-essay/")
-    elif part2 == 2:
-      webbrowser.open_new_tab("https://www.scribbr.com/academic-essay/essay-outline/")
+    elif problem == 2:
+        print("""
+        1. Not sure what to do?
+        2. Having trouble with organization?
+        """)
+        part2 = int(input("What part are you having trouble with? "))
+        if part2 == 1:
+            webbrowser.open_new_tab("https://www.easybib.com/guides/writing-guides/tips/how-to-brainstorm-for-essay/")
+        elif part2 == 2:
+            webbrowser.open_new_tab("https://www.scribbr.com/academic-essay/essay-outline/")
 
-if problem == 3:
-  print("""What are you having trouble with? 
-  1. Not sure what to do/how to research
-  2. Need help finding sources
-  """)
-  part3 = int(input("type the letter of your issue: "))
-  if part3 == 1:
-    webbrowser.open_new_tab("https://www.bestessaytips.com/writing_steps_research.php")
-  elif part3 == 2:
-    webbrowser.open_new_tab("https://scholar.google.com/")
+    elif problem == 3:
+        print(""" 
+      1. Not sure what to do/how to research
+      2. Need help finding sources
+      """)
+        part3 = int(input("What part are you having trouble with? "))
+        if part3 == 1:
+            webbrowser.open_new_tab("https://www.bestessaytips.com/writing_steps_research.php")
+        elif part3 == 2:
+            webbrowser.open_new_tab("https://scholar.google.com/")
 
-if problem == 4:
-  print(("""What are you having trouble with? 
-  1. Not sure what to do/how to research
-  2. Need help finding sources
-  """))
-  part4 = int(input("type the letter of your issue: "))
-  if part4 == 1:
-    webbrowser.open_new_tab("https://www.nownovel.com/blog/how-to-write-a-rough-draft-tips/")
-  elif part4 == 2:
-    webbrowser.open_new_tab("https://nowastedink.com/2016/04/22/novel-writing-organizing-the-rough-draft/")
+    elif problem == 4:
+        print(("""  
+      1. Not sure what to do/how to research
+      2. Need help finding sources
+      """))
+        part4 = int(input("What part are you having trouble with? "))
+        if part4 == 1:
+            webbrowser.open_new_tab("https://www.nownovel.com/blog/how-to-write-a-rough-draft-tips/")
+        elif part4 == 2:
+            webbrowser.open_new_tab("https://nowastedink.com/2016/04/22/novel-writing-organizing-the-rough-draft/")
 
-if problem == 5:
-    print(""""
-    1. Not sure what to do?
-    2. Need help with grammar
-    3. Formatting(MLA, Chicago, APA)
-    """)  
-    part5 = int(input("What part are you having trouble with? "))
-    if part5 == 1:
-      webbrowser.open_new_tab("https://student.unsw.edu.au/editing-your-essay")
-    elif part5 == 2:
-      webbrowser.open_new_tab("https://www.grammarcheck.net/editor/")
-    elif part5 == 3:
-      print(""""You can pick from the following format styles
-    1. MLA
-    2. Chicago
-    3. APA
-    """)
-      format_type = int(input("What format type are you having trouble with? "))
-      if format_type == 1:
-        webbrowser.open_new_tab("https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_general_format.html")
-      elif format_type == 2:
-        webbrowser.open_new_tab("https://owl.purdue.edu/owl/research_and_citation/chicago_manual_17th_edition/cmos_formatting_and_style_guide/general_format.html")
-      elif format_type == 3:
-        webbrowser.open_new_tab("https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html")
+    elif problem == 5:
+        print(""""
+        1. Not sure what to do?
+        2. Need help with grammar
+        3. Formatting(MLA, Chicago, APA)
+        """)
+        part5 = int(input("What part are you having trouble with? "))
+        if part5 == 1:
+            webbrowser.open_new_tab("https://student.unsw.edu.au/editing-your-essay")
+        elif part5 == 2:
+            webbrowser.open_new_tab("https://www.grammarcheck.net/editor/")
+        elif part5 == 3:
+            print(""""You can pick from the following format styles
+        1. MLA
+        2. Chicago
+        3. APA
+        """)
+            format_type = int(input("What format type are you having trouble with? "))
+            if format_type == 1:
+                webbrowser.open_new_tab(
+                    "https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_formatting_and_style_guide/mla_general_format.html")
+            elif format_type == 2:
+                webbrowser.open_new_tab(
+                    "https://owl.purdue.edu/owl/research_and_citation/chicago_manual_17th_edition/cmos_formatting_and_style_guide/general_format.html")
+            elif format_type == 3:
+                webbrowser.open_new_tab(
+                    "https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/general_format.html")
 
-if problem == 6:
-  print(("""What are you having trouble with? 
-  1. Need Help doing the final polish
-  2. I'm done!!!:)
-  """))
-  part6 = int(input("What are you having trouble with? "))
-  if part6 == 1:
-    webbrowser.open_new_tab("https://www.capstoneediting.com.au/resources/part-5-how-to-finalise-and-polish-your-essay")
-  elif part6 == 2:
-    webbrowser.open_new_tab("https://www.youtube.com/watch?v=SC4xMk98Pdc")
+    elif problem == 6:
+        print((""" 
+      1. Need Help doing the final polish
+      2. I'm done!!!:)
+      """))
+        part6 = int(input("What are you having trouble with? "))
+        if part6 == 1:
+            webbrowser.open_new_tab(
+                "https://www.capstoneediting.com.au/resources/part-5-how-to-finalise-and-polish-your-essay")
+        elif part6 == 2:
+            webbrowser.open_new_tab("https://www.youtube.com/watch?v=SC4xMk98Pdc")
+
+    while problem != range(1, 7):
+        print("Sorry that isn't an option, please refer to the chart above and enter the corresponding number.")
+        essay_helper()
+
+test = print(essay_helper())
